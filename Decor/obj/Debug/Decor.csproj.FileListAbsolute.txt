@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Decor\Decor\bin\Debug\Decor.exe.config
+C:\Users\User\source\repos\Decor\Decor\bin\Debug\Decor.exe
+C:\Users\User\source\repos\Decor\Decor\bin\Debug\Decor.pdb
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.Form1.resources
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.Properties.Resources.resources
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.exe
+C:\Users\User\source\repos\Decor\Decor\obj\Debug\Decor.pdb
