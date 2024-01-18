@@ -19,11 +19,11 @@ namespace Decor
             Tree.g = g;
         }
         Graphics g;
-        Tree air;
+        Tree tree;
         CheckBox contrl;
         private void button1_Click(object sender, EventArgs e)
         {
-            air = new Tree();
+            tree = new Tree();
             g.Clear(Color.WhiteSmoke);
             Console.WriteLine("------------------------------------");
             for (int i = 1; i < 5; i++)
@@ -32,15 +32,15 @@ namespace Decor
                 if (contrl.Checked) {
                     switch (Convert.ToInt32(((CheckBox)contrl).Tag))
                     {
-                        case 1: air = new LeafDecorat(air); break;
-                        case 2: air = new FloweringDecorat(air); break;
-                        case 3: air = new AppleDecorat(air); break;
-                        case 4: air = new AutumnDecorat(air);break;
+                        case 1: tree = new LeafDecorat(tree); break;
+                        case 2: tree = new FloweringDecorat(tree); break;
+                        case 3: tree = new AppleDecorat(tree); break;
+                        case 4: tree = new AutumnDecorat(tree);break;
                     }
                 }
             }
-            air.draw();
-            air.Consol();
+            tree.draw();
+            tree.Consol();
 
         }
 
@@ -48,19 +48,19 @@ namespace Decor
         {
             Console.WriteLine("------------------------------------");
             g.Clear(Color.WhiteSmoke);
-            if (air != null)
+            if (tree != null)
             {
                 switch (trackBar1.Value)
                 {
-                    case 0: air = new Tree(); break;
-                    case 1: air = new LeafDecorat(air); break;
-                    case 2: air = new FloweringDecorat(air); break;
-                    case 3: air = new AppleDecorat(air); break;
-                    case 4: air = new AutumnDecorat(air); break;
+                    case 0: tree = new Tree(); break;
+                    case 1: tree = new LeafDecorat(tree); break;
+                    case 2: tree = new FloweringDecorat(tree); break;
+                    case 3: tree = new AppleDecorat(tree); break;
+                    case 4: tree = new AutumnDecorat(tree); break;
                     case 5: trackBar1.Value = 0; trackBar1_Scroll(sender, e); break;
                 }
-                air.draw();
-                air.Consol();
+                tree.draw();
+                tree.Consol();
             }
             else {
                 MessageBox.Show("Дерево не створено");
