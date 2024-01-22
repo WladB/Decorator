@@ -19,6 +19,8 @@ namespace Decor
         {
             Obj = tree;
         }
+        public override void draw() { }
+        public override void Consol() { }
     }
   
     public class LeafDecorat : AbstractDecorator
@@ -26,14 +28,12 @@ namespace Decor
         public LeafDecorat(Tree tree) : base(tree)
         {
             Obj = tree;
-            location.X = 29;
-            location.Y = 68;
-            size = new Size(244, 235);
+     
         }
         public override void draw()
         {
             Obj.draw();
-            g.DrawImage(new Bitmap(@"Leaf.png"), new Rectangle(location, size));
+            g.DrawImage(new Bitmap(@"Leaf.png"), new Rectangle(new Point(29, 68), new Size(244, 235)));
         }
         public override void Consol()
         {
@@ -46,14 +46,11 @@ namespace Decor
         public FloweringDecorat(Tree tree) : base(tree)
         {
             Obj = tree;
-            location.X = 32;
-            location.Y = 70;
-            size = new Size(239, 230);
         }
         public override void draw()
         {
             Obj.draw();
-            g.DrawImage(new Bitmap(@"Flowers.png"), new Rectangle(location, size));
+            g.DrawImage(new Bitmap(@"Flowers.png"), new Rectangle(new Point(32, 70), new Size(239, 230)));
         }
         public override void Consol()
         {
@@ -66,14 +63,11 @@ namespace Decor
         public AppleDecorat(Tree tree) : base(tree)
         {
             Obj = tree;
-            location.X = 32;
-            location.Y = 70;
-            size = new Size(239, 230);
         }
         public override void draw()
         {
             Obj.draw();
-            g.DrawImage(new Bitmap(@"Apple.png"), new Rectangle(location, size));
+            g.DrawImage(new Bitmap(@"Apple.png"), new Rectangle(new Point(32, 70), new Size(239, 230)));
         }
         public override void Consol()
         {
@@ -86,14 +80,11 @@ namespace Decor
         public AutumnDecorat(Tree tree) : base(tree)
         {
             Obj = tree;
-            location.X = 29;
-            location.Y = 68;
-            size = new Size(244, 235);
         }
         public override void draw()
         {
             Obj.draw();
-            g.DrawImage(new Bitmap(@"Autumn.png"), new Rectangle(location, size));
+            g.DrawImage(new Bitmap(@"Autumn.png"), new Rectangle(new Point(29, 68), new Size(244, 235)));
         }
         public override void Consol()
         {

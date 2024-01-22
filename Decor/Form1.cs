@@ -46,18 +46,19 @@ namespace Decor
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            Console.WriteLine("------------------------------------");
+            
             g.Clear(Color.WhiteSmoke);
             if (tree != null)
             {
+                Console.WriteLine("------------------------------------");
                 switch (trackBar1.Value)
                 {
-                    case 0: tree = new Tree(); break;
+                    //case 0: tree = new Tree(); break;
                     case 1: tree = new LeafDecorat(tree); break;
                     case 2: tree = new FloweringDecorat(tree); break;
                     case 3: tree = new AppleDecorat(tree); break;
                     case 4: tree = new AutumnDecorat(tree); break;
-                    case 5: trackBar1.Value = 0; trackBar1_Scroll(sender, e); break;
+                    case 5: trackBar1.Value = 0; tree = new Tree(); break;
                 }
                 tree.draw();
                 tree.Consol();

@@ -17,8 +17,7 @@ namespace Decor
         public Size size;
         public Tree()
         {
-            location.X = 75;
-            location.Y = 180;
+            location = new Point(75, 180);
             size = new Size(150, 210);
         }
         public virtual void draw()
